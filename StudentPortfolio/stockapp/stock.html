@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API Homework</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+     
+
+    <div class="container">
+
+            <nav class="navbar navbar-light bg-light nvbar">
+                    <span class="navbar-brand mb-0 h1">Company Stock Info</span>
+                  </nav>
+
+        <select class="custom-select" id="stocks-view"></select> 
+
+        <br> 
+
+        <div class="input-group">
+          <input id="stockInfo" type="text" class="form-control" placeholder="Enter Stock Tag" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+          <div class="input-group-append" id="button-addon4">
+            <button id="btnSubmit" class="btn btn-outline-secondary" type="submit button">Submit</button>
+            <button id="btnClear" class="btn btn-outline-secondary" type="btnClear button">Clear</button>
+            <button id="resetButtons" class="btn btn-outline-secondary" type="button" >Reset</button>
+          </div>
+        </div>
+
+        <div id="logoDiv">
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">Stock Symbol</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody id='tBody'>
+            </tbody>
+        </table>
+        <div id="newsDiv">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script> src="./assets/bootstrap/" </script>
+    <script src="app.js"></script>
+</body>
+</html>
